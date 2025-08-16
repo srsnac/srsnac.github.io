@@ -26,6 +26,10 @@ jekyll-archives:
     category: /blog/categories/:name/
     tag: /blog/tags/:name/
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 pagination:
   enabled: true
   per_page: 5
