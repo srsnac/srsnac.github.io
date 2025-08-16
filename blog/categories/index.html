@@ -1,0 +1,16 @@
+---
+layout: default
+title: دسته‌بندی‌ها
+---
+
+<h1>دسته‌بندی‌ها</h1>
+
+<ul>
+  {% for category in site.categories %}
+    <li>
+      <a href="/blog/categories/{{ category[0] | slugify }}">
+        {{ category[0] }} ({{ category[1].size }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>
