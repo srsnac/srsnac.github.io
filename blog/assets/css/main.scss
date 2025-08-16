@@ -1,0 +1,62 @@
+---
+---
+
+$primary-color: #333;
+$secondary-color: #666;
+$link-color: #0066cc;
+$background-color: #f9f9f9;
+$font-family: 'Tahoma', 'Arial', sans-serif;
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $primary-color;
+  background: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  
+  nav a {
+    margin-left: 15px;
+    color: $primary-color;
+    text-decoration: none;
+    
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.post {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  
+  &-meta {
+    color: $secondary-color;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin: 30px 0;
+  
+  a, span {
+    margin: 0 10px;
+  }
+}
