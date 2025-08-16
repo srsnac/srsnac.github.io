@@ -1,0 +1,32 @@
+title: وبلاگ من
+description: >-
+  توضیحات وبلاگ من
+baseurl: "/blog"
+url: "https://srsnac.github.io"
+permalink: /blog/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /blog/categories/:name/
+    tag: /blog/tags/:name/
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/page/:num/'
